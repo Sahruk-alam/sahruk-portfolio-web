@@ -1,16 +1,17 @@
 import React from 'react';
 import sahruk from '../../assets/sahruk.jpg';
-import { NavLink } from 'react-router';
+import { Link, NavLink } from 'react-router';
 const Navbar = () => {
     const links=<>
     <NavLink to="/">Home</NavLink>
     <NavLink to="/about">About</NavLink>
     <NavLink to="/skills">Skills</NavLink>
+    <NavLink to="/education">Education</NavLink>
     <NavLink to="/projects">Projects</NavLink>
     <NavLink to="/contact">Contact</NavLink>
     </>
     return (
-       <div className="navbar bg-base-100 shadow-2xl px-4">
+       <div className="navbar bg-base-100 shadow-sm px-4">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost sm:hidden">
@@ -22,10 +23,10 @@ const Navbar = () => {
         {links}
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">Sahruk</a>
+    <Link to="/" className="font-bold hover:text-amber-500 ml-3 text-xl">Sahruk</Link>
   </div>
   <div className="navbar-center hidden sm:flex">
-    <ul className="menu menu-horizontal px-1 gap-5 ">
+    <ul className="menu font-semibold menu-horizontal px-1 gap-5 ">
       {links}
     </ul>
   </div>
