@@ -63,7 +63,7 @@ const Skill = () => {
 
                     <div className='bg-black p-2 flex flex-col items-center m-10 justify-center w-30 h-30 rounded-lg mx-auto mt-10 hover:scale-105 transition-all duration-300 cursor-pointer'>
                     <LuSpeech size={40} className='text-violet-500' />
-                    <h3 className='text-white mt-1 font-semibold'>Speech</h3>
+                    <h3 className='text-white mt-1 font-semibold text-center'>Public Speech</h3>
                     </div>
             </div>
 

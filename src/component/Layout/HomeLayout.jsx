@@ -5,17 +5,21 @@ import AboutMe from '../pages/AboutMe';
 import { Outlet } from 'react-router';
 import Skill from '../pages/Skill';
 import Education from '../pages/Education';
+import Projects from '../pages/Projects';
+import Footer from '../pages/Footer';
 
 const HomeLayout = () => {
     return (
         <div>
             <Navbar />
-            <Hero/>
+            {/* <Hero/> */}
             
             {/* https://jigarsable.netlify.app/ */}
-            <AboutMe/>
-            <Skill/>
-            <Education/>
+            {/* <AboutMe/> */}
+            {/* <Skill/> */}
+            {/* <Education/> */}
+            <Projects/>
+            <Footer/>
         </div>
     );
 };
