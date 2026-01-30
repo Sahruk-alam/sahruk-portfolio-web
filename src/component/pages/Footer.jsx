@@ -1,67 +1,102 @@
-import React from 'react';
-import { Link } from 'react-router';
+import React from "react";
+import { BsWhatsapp } from "react-icons/bs";
+import {
+  FaFacebook,
+  FaGithub,
+  FaLinkedin,
+  FaPhone,
+  FaRegAddressBook,
+} from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { TfiEmail } from "react-icons/tfi";
+import { Link } from "react-router";
 
 const Footer = () => {
-    return (
-        <div>
-<footer className="footer sm:footer-horizontal bg-base-300 text-base-content p-10">
-  <nav>
-   <h2 className='text-xl'>Sahruk Portfolio</h2>
-<p>
-  Thank you for visiting my personal portfolio website. Connect with me over socials.  
-</p>
-  </nav>
-  <nav>
-    <h2>Social Link</h2>
-    <Link to="/">Home</Link>
-    <Link to="/about">About</Link>
-    <Link to="/skill">Skills</Link>
-    <Link to="/education">Education</Link>
-    <Link to="/projects">Projects</Link>
-    <Link to="/contact">Contact</Link>
-  </nav>
-  <nav>
-    <h6 className="footer-title">Social</h6>
-    <div className="grid grid-flow-col gap-4">
-      <a>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          className="fill-current">
-          <path
-            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
-        </svg>
-      </a>
-      <a>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          className="fill-current">
-          <path
-            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
-        </svg>
-      </a>
-      <a>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          className="fill-current">
-          <path
-            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
-        </svg>
-      </a>
-    </div>
-  </nav>
-</footer>
+  return (
+    <div className=" bg-[#0B1C2D]">
+      <footer className="footer  sm:footer-horizontal text-white text-base-content p-10">
+        <nav className="flex-1">
+          <h2 className="text-xl">Sahruk Portfolio</h2>
+          <p>
+            Thank you for visiting my personal portfolio website. Connect with
+            me over socials.
+          </p>
+        </nav>
+        <nav className="flex-1 mx-10">
+          <h2 className="text-lg">Social Link</h2>
+          <ul className="flex flex-col gap-2">
+            <Link to="/">Home</Link>
+            <Link to="/about">About</Link>
+            <Link to="/skill">Skills</Link>
+            <Link to="/education">Education</Link>
+            <Link to="/projects">Projects</Link>
+            <Link to="/contact">Contact</Link>
+          </ul>
+        </nav>
+        <nav className="flex-1">
+          <h2 className="text-lg">Contact Info</h2>
+          <div className="gap-3 flex flex-col">
+            <h2 className="flex gap-2 items-center">
+              <FaPhone className="text-yellow-600" />
+              +8801734748059
+            </h2>
+            <h2 className="flex gap-2 items-center">
+              <MdEmail className="text-yellow-600" />
+              sahrukalam8059@gmail.com
+            </h2>
+            <h2 className="flex gap-2 items-center">
+              <FaRegAddressBook className="text-yellow-600" />
+              Rajshahi, Bangladesh
+            </h2>
+          </div>
+          <div className="flex gap-2 mt-4">
+            <a
+              href="https://www.linkedin.com/in/sahruk-alam-sarder-ab5495304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              className="group hover:bg-blue-500 transition  bg-black p-2 rounded-full"
+              target="_blank"  >  <FaLinkedin  size={25}
+                className="group-hover:text-white transition text-blue-400" />
+            </a>
+            <a href="https://github.com/Sahruk-alam"
+              className="group hover:bg-gray-800 transition  bg-black p-2 rounded-full"
+              target="_blank" >
+              <FaGithub  size={25}
+                className="group-hover:text-white transition text-blue-400"   />
+            </a>
+            <a
+              href="https://www.facebook.com/share/18EXxx5dzC/"
+              className="group hover:bg-blue-700 transition  bg-black p-2 rounded-full"
+              target="_blank"  >  <FaFacebook
+                size={25}
+                className="group-hover:text-white transition text-blue-400"
+              />
+            </a>
+            <a   href="mailto:sahrukalam8059@gmail.com"
+              className="group hover:bg-blue-500 transition  bg-black p-2 rounded-full"
+              target="_blank">  <TfiEmail  size={24}
+                className="group-hover:text-white transition text-blue-400"
+              />
+            </a>
+            <a
+              href="https://wa.me/8801734748059"
+              className="group hover:bg-green-600 transition  bg-black p-2 rounded-full"
+              target="_blank"
+            >
+              <BsWhatsapp
+                size={24}
+                className="group-hover:text-white transition text-blue-400"
+              />
+            </a>
+          </div>
+        </nav>
+      </footer>
 
-        </div>
-    );
+      <div className="border-t-1 border-gray-500">
+        <h2 className="text-white py-3 text-center text-sm">
+          Design by Sahruk Alam
+        </h2>
+      </div>
+    </div>
+  );
 };
 
 export default Footer;
