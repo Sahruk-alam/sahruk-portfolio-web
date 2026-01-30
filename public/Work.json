@@ -3,36 +3,35 @@
         "id":1,
         "live":"https://greennest-plants.web.app/",
         "code":"https://github.com/Sahruk-alam/greenest-plants-project",
-        "image":""
+        "image":"../src/assets/Greennest.png",
+        "title":"Greennest Plants"
     },
     {
         "id":2,
         "live":"https://hero-app-sahruk.netlify.app/",
         "code":"https://github.com/Sahruk-alam/hero-apps",
-        "image":""
+        "image":"../src/assets/Hero.png",
+        "title":"Hero Apps"
     },
     {
         "id":3,
         "live":"https://dragon-news-paper-7802d.web.app/category/0",
         "code":"https://github.com/Sahruk-alam/dragon-news-paper-project",
-        "image":""
+        "image":"../src/assets/Dragon_news.png",
+        "title":"Dragon News Paper"
     },
     {
         "id":4,
         "live":"https://sahruk-alam.github.io/Emergency-hotline/",
         "code":"https://github.com/Sahruk-alam/Emergency-hotline",
-        "image":""
+        "image":"../src/assets/Hotline.png",
+        "title":"Emergency Hotline"
     },
     {
         "id":5,
         "live":"https://sahruk-alam.github.io/English-janala-with-API/",
         "code":"https://github.com/Sahruk-alam/English-janala-with-API",
-        "image":""
-    },
-    {
-        "id":6,
-        "live":"",
-        "code":"",
-        "image":"" 
+        "image":"../src/assets/English.png",
+        "title":"English Janala"
     }
 ]
