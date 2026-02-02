@@ -18,7 +18,7 @@ const Projects = () => {
           <BsPersonWorkspace />
           Projects & Work
         </h2>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
           {
           work.map((project) => ( 
             <Pwork key={project.id} project={project}></Pwork>

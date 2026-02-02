@@ -10,6 +10,12 @@ import { TfiEmail } from "react-icons/tfi";
 import Avator from "../../assets/avator.png";
 
 const Hero = () => {
+    const handleNavClick = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div id="home" className="bg-base-300 min-h-screen items-center flex">
       <div className="w-10/12 mx-auto gap-7 justify-between flex items-center py-11">
@@ -19,7 +25,7 @@ const Hero = () => {
             I'm <span className="text-orange-400">Sahruk Alam Sarder</span>
           </h2>
           <p className="font-semibold text-lg">I am into Frontend Developer</p>
-          <button className="btn my-3 rounded-2xl btn-primary gap-2 px-8">
+          <button onClick={() => handleNavClick('about')} className="btn my-3 rounded-2xl btn-primary gap-2 px-8">
             About Me
             <FaArrowCircleDown />
           </button>

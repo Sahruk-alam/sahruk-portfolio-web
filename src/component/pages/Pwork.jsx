@@ -17,7 +17,7 @@ const Pwork = ({ project }) => {
   const imageSrc = imageMap[project.image] || project.image;
   return (
     <div className="mt-12 w-11/12 mx-auto ">
-      <div className="card bg-base-100 w-64 shadow-sm overflow-hidden group relative">
+      <div className="card bg-base-100 md:w-64 shadow-sm overflow-hidden group relative">
         <figure>
           <img
             src={imageSrc}
@@ -41,14 +41,14 @@ const Pwork = ({ project }) => {
               className="btn btn-sm btn-primary"
               target="_blank"
             >
-              View
+             Live View
             </a>
             <a
               href={project.code}
               className="btn btn-sm btn-outline btn-secondary"
               target="_blank"
             >
-              Code
+             Github Code
             </a>
           </div>
         </div>

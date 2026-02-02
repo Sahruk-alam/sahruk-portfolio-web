@@ -33,5 +33,12 @@
     "code": "https://github.com/Sahruk-alam/English-janala-with-API",
     "image": "/English.png",
     "title": "English Janala"
+  },
+  {
+    "id": 6,
+    "live": "https://sahruk-alam-portfolio.netlify.app/",
+    "code": "https://github.com/Sahruk-alam/sahruk-portfolio-web",
+    "image": "../src/assets/portfolio.png",
+    "title": "Portfolio Website"
   }
 ]
