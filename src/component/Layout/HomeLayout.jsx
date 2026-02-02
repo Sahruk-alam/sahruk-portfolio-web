@@ -8,20 +8,20 @@ import Education from '../pages/Education';
 import Projects from '../pages/Projects';
 import Footer from '../pages/Footer';
 import Experience from '../pages/Experience';
+import Achievement from '../pages/Achievement';
 
 const HomeLayout = () => {
-    return (
+    {/* https://jigarsable.netlify.app/ */}
+    return (    
         <div>
             <Navbar />
             <Hero/>
-            
-            {/* https://jigarsable.netlify.app/ */}
             <AboutMe/> 
             <Skill/>
             <Education/>
             <Projects/>
             <Experience/>
-            <Footer/>
+            <Footer/> 
         </div>
     );
 };

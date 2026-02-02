@@ -30,8 +30,9 @@ const Education = () => {
                 Varendra University{" "}
               </a>
               <h2 className=" text-sm sm:text-base text-indigo-700 font-medium ">
-                2023–2026 | Running{" "}
+                2023–2026 | Currently Studying 
               </h2>
+              
             </div>
           </div>
           {/* court college  */}
@@ -43,14 +44,17 @@ const Education = () => {
             </div>
             <div className="px-4 pb-4 md:p-2">
               <h2 className=" text-lg sm:text-xl md:text-2xl font-medium ">
-                Higher Secondary Certificate{" "}
+                Higher Secondary Certificate
               </h2>
               <a  href="https://rajcourtcollege.edu.bd/"  target="_blank"
                 className="hover:underline hover:text-violet-600"  >
                 Rajshahi court college{" "}
               </a>
               <h2 className=" text-sm sm:text-base text-indigo-700 font-medium ">
-                GPA : 5.00 | Session : 2018-2019{" "}
+                GPA : 5.00
+              </h2>
+              <h2 className=" text-sm sm:text-base text-indigo-700 font-medium ">
+                Session : 2018-2019
               </h2>
             </div>
           </div>
@@ -67,7 +71,10 @@ const Education = () => {
               </h2>
               <p >Hamirkutsha H.M. Ershad high school  </p>
               <h2 className=" text-sm sm:text-base text-indigo-700 font-medium ">
-                GPA : 5.00 | Session : 2016-2017{" "}
+                GPA : 5.00 
+              </h2>
+              <h2 className=" text-sm sm:text-base text-indigo-700 font-medium ">
+                Session : 2016-2017
               </h2>
             </div>
           </div>

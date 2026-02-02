@@ -30,10 +30,10 @@ const Pwork = ({ project }) => {
     {/* BUTTONS */}
     <div className="flex gap-3">
       <a href={project.live} className="btn btn-sm btn-primary" target='_blank'>
-        view
+        View
       </a>
       <a href={project.code} className="btn btn-sm btn-outline btn-secondary" target='_blank'>
-        GitHub
+      Code
       </a>
     </div>
   </div>

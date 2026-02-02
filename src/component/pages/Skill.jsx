@@ -9,7 +9,7 @@ const Skill = () => {
     return (
         <div className='mt-15 bg-violet-600 py-10 min-h-screen '>
             <div className='w-11/12 mx-auto '>
-            <h2 className='text-4xl flex gap-2 justify-center font-bold'><GiSkills />Skills & Abilities</h2>
+            <h2 className='text-4xl flex text-amber-300 gap-2 justify-center font-bold'><GiSkills />Skills & Abilities</h2>
             <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 bg-violet-300 rounded-2xl mt-10'>
 
                 <div className='bg-black p-2 flex flex-col items-center justify-center w-30 h-30 rounded-lg mx-auto mt-10 hover:scale-105 transition-all duration-300 cursor-pointer'>
