@@ -1,10 +1,16 @@
-import React, { use } from "react";
+import React, { useEffect, useState } from "react";
 import { BsPersonWorkspace } from "react-icons/bs";
 import Pwork from "./Pwork";
-const promise = fetch("/Work.json").then((res) => res.json());
 
 const Projects = () => {
-  const data = use(promise);
+  const [work,setWork] = useState([]);
+  useEffect(() => {
+    fetch("/Work.json")
+    .then((res) => res.json())
+    .then((data) => {
+      setWork(data);
+    });
+  }, []);
   return (
     <div id="projects" className=" bg-base-300 min-h-screen">
       <div className="py-12 w-11/12 mx-auto">
@@ -13,10 +19,11 @@ const Projects = () => {
           Projects & Work
         </h2>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {data.map((project) => (
+          {
+          work.map((project) => ( 
             <Pwork key={project.id} project={project}></Pwork>
           ))}
-        </div>
+        </div>     
       </div>
     </div>
   );

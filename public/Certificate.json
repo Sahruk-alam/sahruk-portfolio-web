@@ -1,23 +1,22 @@
 [
-    {
-        "Id": 1, 
-        "image": "../public/Bystander.jpeg",
-        "title": "Bystander Youth Leadership Training"
-    },
-    {
-        "Id": 2,
-        "image": "../public/Digital twin village.jpeg",
-        "title": "Digital Twin for Village :A predictive intelligence architecture for sustainable and resilient Rural Development"
-
-    },
-    {
-        "Id": 3,
-        "image": "../public/UCICS 2025.jpeg",
-        "title": "Certificate of Participation : UNDERGRADUATE CONFERENCE ON INTELLIGENT COMPUTING AND SYSTEMS UCICS 2025"
-    },
-    {
-        "Id": 4,
-        "image": "../public/Research on display.jpeg",
-        "title": "Research on Display: Hands-on Workshop for Conference Posters"
-    }
+  {
+    "id": 1,
+    "image": "/Bystander.jpeg",
+    "title": "Bystander Youth Leadership Training"
+  },
+  {
+    "id": 2,
+    "image": "/Digital twin village.jpeg",
+    "title": "Digital Twin for Village :A predictive intelligence architecture for sustainable and resilient Rural Development"
+  },
+  {
+    "id": 3,
+    "image": "/UCICS 2025.jpeg",
+    "title": "Certificate of Participation : UNDERGRADUATE CONFERENCE ON INTELLIGENT COMPUTING AND SYSTEMS UCICS 2025"
+  },
+  {
+    "id": 4,
+    "image": "/Research on display.jpeg",
+    "title": "Research on Display: Hands-on Workshop for Conference Posters"
+  }
 ]

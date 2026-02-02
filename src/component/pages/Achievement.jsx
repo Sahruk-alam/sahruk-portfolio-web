@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 const Achievement = () => {
     const [achievements, setAchievements] = useState([]);
     useEffect(() => {
-        fetch('/public/Certificate.json')
+        fetch('/Certificate.json')
         .then(res => res.json())
         .then(data => {
             setAchievements(data);
@@ -16,7 +16,8 @@ const Achievement = () => {
             <div>
 
 <div className="grid gap-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 ">
-  {achievements.map((achievement) => (
+  {
+  achievements.map((achievement) => (
     <div
       key={achievement.id} className=" group relative overflow-hidden
         rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 " >
