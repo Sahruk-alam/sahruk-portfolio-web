@@ -6,7 +6,7 @@ const promise = fetch("/Work.json").then((res) => res.json());
 const Projects = () => {
   const data = use(promise);
   return (
-    <div className=" bg-base-300 min-h-screen">
+    <div id="projects" className=" bg-base-300 min-h-screen">
       <div className="py-12 w-11/12 mx-auto">
         <h2 className="text-3xl sm:text-4xl flex sm:gap-2 justify-center font-bold text-center">
           <BsPersonWorkspace />

@@ -10,10 +10,15 @@ import {
 import { MdEmail } from "react-icons/md";
 import { TfiEmail } from "react-icons/tfi";
 import { Link } from "react-router";
-
+ const handleNavClick = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 const Footer = () => {
   return (
-    <div className=" bg-[#0B1C2D]">
+    <div id="contact" className=" bg-[#0B1C2D]">
       <footer className="footer  sm:footer-horizontal text-white text-base-content p-10">
         <nav className="flex-1">
           <h2 className="text-xl">Sahruk Portfolio</h2>
@@ -25,12 +30,12 @@ const Footer = () => {
         <nav className="flex-1 mx-10">
           <h2 className="text-lg">Social Link</h2>
           <ul className="flex flex-col gap-2">
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/skill">Skills</Link>
-            <Link to="/education">Education</Link>
-            <Link to="/projects">Projects</Link>
-            <Link to="/contact">Contact</Link>
+            <Link onClick={() => handleNavClick("home")} to="/">Home</Link>
+            <Link onClick={() => handleNavClick("about")} to="/about">About</Link>
+            <Link onClick={() => handleNavClick("skill")} to="/skill">Skills</Link>
+            <Link onClick={() => handleNavClick("education")} to="/education">Education</Link>
+            <Link onClick={() => handleNavClick("projects")} to="/projects">Projects</Link>
+            <Link onClick={() => handleNavClick("experience")} to="/experience">Experience</Link>
           </ul>
         </nav>
         <nav className="flex-1">
@@ -53,26 +58,43 @@ const Footer = () => {
             <a
               href="https://www.linkedin.com/in/sahruk-alam-sarder-ab5495304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
               className="group hover:bg-blue-500 transition  bg-black p-2 rounded-full"
-              target="_blank"  >  <FaLinkedin  size={25}
-                className="group-hover:text-white transition text-blue-400" />
-            </a>
-            <a href="https://github.com/Sahruk-alam"
-              className="group hover:bg-gray-800 transition  bg-black p-2 rounded-full"
-              target="_blank" >
-              <FaGithub  size={25}
-                className="group-hover:text-white transition text-blue-400"   />
-            </a>
-            <a
-              href="https://www.facebook.com/share/18EXxx5dzC/"
-              className="group hover:bg-blue-700 transition  bg-black p-2 rounded-full"
-              target="_blank"  >  <FaFacebook
+              target="_blank"
+            >
+              {" "}
+              <FaLinkedin
                 size={25}
                 className="group-hover:text-white transition text-blue-400"
               />
             </a>
-            <a   href="mailto:sahrukalam8059@gmail.com"
+            <a
+              href="https://github.com/Sahruk-alam"
+              className="group hover:bg-gray-800 transition  bg-black p-2 rounded-full"
+              target="_blank"
+            >
+              <FaGithub
+                size={25}
+                className="group-hover:text-white transition text-blue-400"
+              />
+            </a>
+            <a
+              href="https://www.facebook.com/share/18EXxx5dzC/"
+              className="group hover:bg-blue-700 transition  bg-black p-2 rounded-full"
+              target="_blank"
+            >
+              {" "}
+              <FaFacebook
+                size={25}
+                className="group-hover:text-white transition text-blue-400"
+              />
+            </a>
+            <a
+              href="mailto:sahrukalam8059@gmail.com"
               className="group hover:bg-blue-500 transition  bg-black p-2 rounded-full"
-              target="_blank">  <TfiEmail  size={24}
+              target="_blank"
+            >
+              {" "}
+              <TfiEmail
+                size={24}
                 className="group-hover:text-white transition text-blue-400"
               />
             </a>
