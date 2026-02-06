@@ -4,7 +4,7 @@ import { GiSkills } from "react-icons/gi";
 import { IoLogoCss3, IoLogoFirebase, IoLogoPython } from "react-icons/io5";
 import { LuSpeech } from "react-icons/lu";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiMysql } from "react-icons/si";
+import { SiExpress, SiMysql } from "react-icons/si";
 const Skill = () => {
   return (
     <div id="skill" className="mt-15 bg-violet-600 py-10 min-h-screen ">
@@ -13,7 +13,7 @@ const Skill = () => {
           <GiSkills />
           Skills & Abilities
         </h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 bg-violet-300 rounded-2xl mt-10">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 bg-violet-300 rounded-2xl mt-10">
           <div className="bg-black p-2 flex flex-col items-center justify-center w-30 h-30 rounded-lg mx-auto mt-10 hover:scale-105 transition-all duration-300 cursor-pointer">
             <FaReact size={40} className="text-blue-500" />
             <h3 className="text-white mt-1 font-semibold">ReactJS</h3>
@@ -69,6 +69,14 @@ const Skill = () => {
               Public Speech
             </h3>
           </div>
+
+           <div className="bg-black p-2 flex flex-col items-center m-10 justify-center w-30 h-30 rounded-lg mx-auto mt-10 hover:scale-105 transition-all duration-300 cursor-pointer">
+            <SiExpress size={40} className="text-violet-500" />
+            <h3 className="text-white mt-1 font-semibold text-center">
+              ExpressJS
+            </h3>
+          </div>
+
         </div>
       </div>
     </div>

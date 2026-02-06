@@ -11,7 +11,7 @@ const Education = () => {
     >
       <div className="w-8/12 mx-auto">
         <h2 className="text-4xl flex font-semibold justify-center gap-2">
-          <FaGraduationCap /> My{" "}
+          <FaGraduationCap size={40} /> My{" "}
           <span className="text-violet-600"> Education</span>
         </h2>
         <div>

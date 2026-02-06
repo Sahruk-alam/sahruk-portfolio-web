@@ -8,11 +8,10 @@ import English from "../../assets/English.png";
 const imageMap = {
   "/Greennest.png": Greennest,
   "/Hero.png": Hero,
-  "/Dragon_news.png": Dragon,
+  "/Dragon_news.png": Dragon, 
   "/Hotline.png": Hotline,
   "/English.png": English,
 };
-
 const Pwork = ({ project }) => {
   const imageSrc = imageMap[project.image] || project.image;
   return (

@@ -43,7 +43,7 @@ const Navbar = () => {
   };
 
   const links = (
-    <>
+    <div className="flex flex-col sm:font-semibold sm:flex-row gap-2">
       <NavLink to="/" onClick={() => handleNavClick("home")}>
         Home
       </NavLink>
@@ -62,7 +62,7 @@ const Navbar = () => {
       <NavLink to="/experience" onClick={() => handleNavClick("experience")}>
         Experience
       </NavLink>
-    </>
+    </div>
   );
   return (
     <div className="navbar sticky top-0 z-50 bg-base-100 shadow-sm  px-4">
